@@ -20,6 +20,11 @@ word2 = "Truck"
 
 # Your code below:
 
+def remove_char(word1, word2):
+    result = word1[1:] + word2[0] + word2[2:]
+    return result
+
+print(remove_char(word1, word2))
 
 
 

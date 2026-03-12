@@ -22,6 +22,11 @@ word = "Cool"
 
 # Your code below:
 
+def move_middle(string1, string2):
+    result = string1[0:len(string1)//2] + string2 + string1[len(string1)//2:]
+    return result
+
+print(move_middle(chars, word))
 
 
 

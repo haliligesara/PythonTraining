@@ -7,7 +7,12 @@
 """
 
 
+def reminder (val_1, val_2):
+    result = val_1%val_2
+    return result
 
+
+print(reminder(15,4))
 
 
 
