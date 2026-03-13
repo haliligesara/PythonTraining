@@ -12,7 +12,11 @@ IMPORTANT: you must do this programmatically! Don't just
 original_list = ['cup', 'cereal', 'milk', (8, 4, 3)]
 
 # your code below:
-
+t = original_list[3]
+original_list.pop()
+new_t = (t[2], t[1], t[0])
+original_list.append(new_t)
+print(original_list)
 
 
 
