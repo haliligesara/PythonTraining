@@ -7,9 +7,12 @@
     Make sure to test the function.
 """
 # Your Code Below:
+s = 'beautiful'
 
+def separate(s):
+    return list(s)
 
-
+print(separate(s))
 
 
 

@@ -7,6 +7,15 @@
 
 # your code below:
 
+l1 = [1,2,3]
+l2 = ['a', 'd', 'c']
+
+def merge_lists(l1, l2):
+    res = l1 + l2
+    return res
+
+print(merge_lists(l1,l2))
+
 
 
 

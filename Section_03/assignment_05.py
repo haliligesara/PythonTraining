@@ -16,6 +16,13 @@ Example:
 # Your Code Below:
 
 
+def key_list_items(el, **kwargs):
+    return kwargs[el][-2]
+
+res = key_list_items("people", things=['book', 'tv'], people=['pete', 'mike', 'jan', 'tom'])
+print(res)
+
+
 
 
 

@@ -10,9 +10,14 @@ argument as individual elements in the list.
 
 """
 # Your Code Below:
+l = [1,2,3,4,5,6,7]
+s = 'in the end everything will be okay'
 
+def multi_merge(l, s):
+    res = l + s.split() + list(s)
+    return res
 
-
+print(multi_merge(l,s))
 
 
 
