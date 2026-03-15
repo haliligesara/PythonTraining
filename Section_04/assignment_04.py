@@ -11,49 +11,12 @@ grow_string('ab') → 'aab'
 
 # Your Code Below:
 
+def grow_string(s):
+    ns = ''
+    for i in range(0,len(s)):
+        ns += s[0:i]
+    return ns+s
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Solution:
-
-# def grow_string(str):
-#   result = ""
-#   # On each iteration, add the substring of the chars 0..i
-#   for i in range(len(str)):
-#     result = result + str[:i+1]
-#   return result
+print(grow_string('ab'))
 

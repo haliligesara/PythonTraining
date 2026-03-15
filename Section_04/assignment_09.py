@@ -40,9 +40,16 @@ d= {
 # --------------------------------------
 
 
-
-
-
+for el in fr:
+    flag_count = 0
+    for key, value in d.items():
+        max_v = int(max(d.values()))
+        if (key == el[0:el.index('|')]):
+            flag_count +=1
+            fr[fr.index(el)] = value + el[el.index('|'):]
+    if flag_count == 0:
+        d.setdefault(el[0:el.index('|')], str(max_v+1))
+        fr[fr.index(el)] = str(max_v+1) + el[el.index('|'):]  
 
 # don't change the lines below:
 # --------------------------------------
@@ -50,65 +57,3 @@ print("Value of fr: ")
 print(fr)
 print("Value of d:")
 print(d)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Solution:
-#
-# line_list = []
-# # this won't work for missing keys
-# for line in fr:
-#     columns = line.split("|")
-#     lookup_val = columns[0]
-#
-#     # if lookup_val not in d.keys():
-#     if(d.get(lookup_val) is None): # Can't find in dict
-#
-#         # get the next number + 1 from dict
-#         next_number = int(max(d.values())) + 1
-#         d[lookup_val] = str(next_number)
-#         columns[0] = str(next_number)
-#         line_list.append("|".join(columns))
-#     else:
-#         columns[0] = d.get(columns[0])
-#         line_list.append("|".join(columns))
-#
-# fr = line_list
-#

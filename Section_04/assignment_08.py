@@ -16,66 +16,21 @@ sum78([1, 1, 7, 8, 2]) → 4
 
 #Your Code Below:
 
+def sum78(l):
+    sum = 0
+    flag_skipp = False
+    for el in l:
+        if el != 7 and flag_skipp==False:
+            sum = sum + el
+        else:
+            if el != 8:
+                flag_skipp = True
+            else: flag_skipp = False
 
-
-
-
-
-
-
-
-
-
-
-
-
+    return sum
 
 
 
 print(sum78([1, 2, 2])) #→ 5
 print(sum78([1, 2, 2, 7, 99, 99, 8])) #→ 5
 print(sum78([1, 1, 7, 8, 2])) #→ 4
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Solution:
-
-# def sum78(nums):
-#     sum = 0
-#     inRange = False
-#
-#     for i in range(len(nums)):
-#         if nums[i] == 7:
-#             inRange = True
-#
-#         if not inRange:
-#             sum += nums[i]
-#
-#         if inRange and nums[i] == 8:
-#             inRange = False
-#
-#     return sum

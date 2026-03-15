@@ -14,6 +14,11 @@ twelver(9, 3) → True
 
 # Your Code Below:
 
+def twelver(num1,num2):
+    res = (num1==12 or num2==12) or ((num1+num2)==12)
+    return res
+
+print(twelver(9, 3))
 
 
 
@@ -34,27 +39,3 @@ twelver(9, 3) → True
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Solution:
-# def twelver(a, b):
-#   return (a == 12 or b == 12 or a+b == 12)
